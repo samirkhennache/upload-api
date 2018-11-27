@@ -1,0 +1,12 @@
+extends layout
+
+block content
+
+  form(method='POST',enctype ='multipart/form-data', action ='uploaddufichier',accept ='png')
+    p
+      | Welcome to #{title}
+    p
+      | Upload your files:
+    input(name='monfichier', value= "test", type='file',accept="image/png",multiple)
+
+    input(value='Submit', type='submit')
